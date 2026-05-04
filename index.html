@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Stockify – simple inventory & record-keeping for small businesses. Track stock, manage orders, and get real-time insights. Start your free trial today."
+    />
+    <meta
+      name="keywords"
+      content="inventory management, record keeping, small business stock, SaaS, stock tracking"
+    />
+    <meta name="author" content="Stockify" />
+    <meta name="robots" content="index, follow" />
+    <title>
+      Stockify – Smart Inventory & Record Keeping for Small Business
+    </title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Placeholder for Google Analytics / tracking scripts (commented placeholder for real integration) -->
+    <!-- Global site tag (gtag.js) - Google Analytics placeholder -->
+    <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+    <!-- Structured Data (JSON-LD) for SEO enhancement: SoftwareApplication -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Stockify",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "description": "Simple inventory and record-keeping SaaS for small businesses. Track stock, manage orders, and gain real-time insights.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "342"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 antialiased">
+    <!-- =========================== HEADER / NAVIGATION =========================== -->
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm"
+    >
+      <div
+        class="container mx-auto px-5 md:px-8 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-md"
+          >
+            <i class="fas fa-boxes text-white text-sm"></i>
+          </div>
+          <span
+            class="font-bold text-xl tracking-tight bg-gradient-to-r from-indigo-700 to-purple-700 bg-clip-text text-transparent"
+            >Stockify</span
+          >
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a
+            href="#features"
+            class="text-gray-600 hover:text-indigo-600 transition font-medium"
+            >Features</a
+          >
+          <a
+            href="#pricing"
+            class="text-gray-600 hover:text-indigo-600 transition font-medium"
+            >Pricing</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-600 hover:text-indigo-600 transition font-medium"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-600 hover:text-indigo-600 transition font-medium"
+            >Contact</a
+          >
+        </nav>
+        <div class="hidden lg:flex items-center space-x-3">
+          <a
+            href="#"
+            class="px-4 py-2 text-indigo-600 font-medium hover:bg-indigo-50 rounded-xl transition"
+            id="loginBtnDesktop"
+            >Log in</a
+          >
+          <a
+            href="#pricing"
+            class="px-5 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl shadow-md hover:bg- gradient-to-r hover:from-indigo-700 hover:to-purple-700 transition transform hover:-translate-y-0.5 hover:shadow-lg duration-200"
+            >Start free trial</a
+          >
+        </div>
+
+        <!-- Mobile menu button (hamburger) -->
+        <button
+          id="mobileMenuButton"
+          class="lg:hidden focus:outline-none text-gray-700 text-2xl"
+          aria-label="Menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile dropdown menu (hidden initially) -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white border-t border-gray-100 px-5 py-4 flex flex-col space-y-4 shadow-lg"
+      >
+        <a
+          href="#features"
+          class="text-gray-700 hover:text-indigo-600 py-2 font-medium"
+          >Features</a
+        >
+        <a
+          href="#pricing"
+          class="text-gray-700 hover:text-indigo-600 py-2 font-medium"
+          >Pricing</a
+        >
+        <a
+          href="#testimonials"
+          class="text-gray-700 hover:text-indigo-600 py-2 font-medium"
+          >Testimonials</a
+        >
+        <a
+          href="#contact"
+          class="text-gray-700 hover:text-indigo-600 py-2 font-medium"
+          >Contact</a
+        >
+        <hr class="my-1" />
+        <a href="#" class="text-indigo-600 font-semibold py-2">Log in</a>
+        <a
+          href="#pricing"
+          class="bg-indigo-600 text-white text-center py-2 rounded-xl font-semibold"
+          >Start free trial</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================== HERO SECTION =========================== -->
+      <section
+        class="relative overflow-hidden bg-linear-to-br from-slate-100 via-white to-indigo-50/30"
+      >
+        <div class="container mx-auto px-5 md:px-8 py-16 md:py-24">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Hero text -->
+            <div>
+              <div
+                class="inline-flex items-center gap-2 bg-indigo-100 rounded-full px-4 py-1.5 text-indigo-700 text-sm font-medium mb-6 border border-indigo-200"
+              >
+                <i class="fas fa-check-circle text-xs"></i>
+                <span>Trusted by 2,000+ small businesses</span>
+              </div>
+
+              <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none"
+              >
+                <span
+                  class="bg-linear-to-r from-gray-900 to-indigo-800 bg-clip-text text-transparent"
+                >
+                  Smart inventory
+                </span>
+                <span class="block text-indigo-600 mt-1"
+                  >for small businesses.</span
+                >
+              </h1>
+
+              <p
+                class="text-gray-600 text-lg md:text-xl mt-6 max-w-lg leading-relaxed"
+              >
+                Stop juggling spreadsheets. Stockify helps you track stock,
+                manage orders, reduce waste, and automate records — all in one
+                beautiful dashboard.
+              </p>
+              <div class="flex flex-wrap gap-4 mt-8">
+                <a
+                  href="#pricing"
+                  class="px-7 py-3.5 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition transform hover:-translate-y-1 hover:shadow-xl flex items-center gap-2"
+                >
+                  Get started free <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+                <a
+                  href="#features"
+                  class="px-6 py-3.5 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition flex items-center gap-2"
+                >
+                  <i class="fas fa-play-circle"></i> See demo
+                </a>
+              </div>
+              <div class="flex items-center gap-6 mt-8 text-sm text-gray-500">
+                <div class="flex -space-x-2">
+                  <div
+                    class="w-8 h-8 rounded-full bg-indigo-200 border-2 border-white flex items-center justify-center text-xs font-bold text-indigo-800"
+                  >
+                    JD
+                  </div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-purple-200 border-2 border-white flex items-center justify-center text-xs font-bold text-purple-800"
+                  >
+                    MK
+                  </div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-pink-200 border-2 border-white flex items-center justify-center text-xs font-bold text-pink-800"
+                  >
+                    SR
+                  </div>
+                </div>
+                <span>⭐ 4.8/5 from 340+ reviews</span>
+              </div>
+            </div>
+
+            <!-- Hero illustration (mockup card) -->
+            <div class="relative">
+              <div
+                class="bg-white rounded-2xl shadow-2xl p-4 border border-gray-100 transform rotate-1 transition hover:rotate-0 duration-300 h-full"
+              >
+                <div
+                  class="bg-linear-to-r from-indigo-50 to-gray-50 rounded-xl p-4"
+                >
+                  <div
+                    class="flex justify-between items-center border-b pb-3 border-gray-200"
+                  >
+                    <div class="flex space-x-1">
+                      <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+
+                    <span class="text-xs font-mono text-gray-500"
+                      >inventory/overview</span
+                    >
+                    <i class="fas fa-chart-line text-indigo-400"></i>
+                  </div>
+
+                  <div class="mt-4 space-y-3">
+                    <div class="flex justify-between text-sm">
+                      <h4 class="font-medium text-indigo-600">Product name</h4>
+                      <h4 class="font-medium text-indigo-600">Stock</h4>
+                      <h4 class="font-medium text-indigo-600">Value</h4>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>Wireless Mouse</span>
+                      <span class="text-green-600">128</span>
+                      <span>$1,280</span>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>Mechanical Keyboard</span>
+                      <span class="text-amber-600">42</span>
+                      <span>$2,520</span>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>USB-C Cables</span>
+                      <span class="text-red-500">7</span>
+                      <span>$35</span>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>POS Machine</span>
+                      <span class="text-amber-600">50</span>
+                      <span>$450</span>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>Scissors</span>
+                      <span class="text-amber-600">39</span>
+                      <span>$105</span>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>Copper Wire</span>
+                      <span class="text-green-600">100</span>
+                      <span>$500</span>
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+                      <span>Tea Spoons</span>
+                      <span class="text-green-600">107</span>
+                      <span>$350</span>
+                    </div>
+
+                    <div
+                      class="bg-indigo-50 rounded-lg p-2 mt-2 text-center text-xs font-semibold text-indigo-700"
+                    >
+                      Low stock alert • Reorder now
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute -top-5 -right-5 w-24 h-24 bg-indigo-200 rounded-full blur-3xl opacity-30 -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-white to-transparent"
+        ></div>
+      </section>
+
+      <!-- =========================== FEATURES SECTION =========================== -->
+      <section id="features" class="py-20 md:py-20 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-14">
+            <span
+              class="text-indigo-600 font-semibold tracking-wide uppercase text-sm"
+              >Core Features</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">
+              Designed for effortless inventory & record keeping
+            </h2>
+            <p class="text-gray-500 mt-4">
+              Everything a small business needs to track stock, sales, and
+              insights without complexity.
+            </p>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="group bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-5"
+              >
+                <i class="fas fa-database"></i>
+              </div>
+              <h3 class="text-xl font-bold">Real-time stock sync</h3>
+              <p class="text-gray-500 mt-2">
+                Update inventory across all channels automatically. Know exactly
+                what’s in stock, anytime.
+              </p>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="group bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-5"
+              >
+                <i class="fas fa-file-invoice"></i>
+              </div>
+              <h3 class="text-xl font-bold">Smart record keeping</h3>
+              <p class="text-gray-500 mt-2">
+                Digital logs for purchases, sales, and returns. Generate reports
+                in seconds.
+              </p>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="group bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-5"
+              >
+                <i class="fas fa-bell"></i>
+              </div>
+              <h3 class="text-xl font-bold">Low stock alerts</h3>
+              <p class="text-gray-500 mt-2">
+                Automated notifications when products are running low. Never
+                miss a restock.
+              </p>
+            </div>
+            <!-- Feature 4 -->
+            <div
+              class="group bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-5"
+              >
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <h3 class="text-xl font-bold">Insightful analytics</h3>
+              <p class="text-gray-500 mt-2">
+                Understand best-sellers, trends, and profit margins with visual
+                dashboards.
+              </p>
+            </div>
+            <!-- Feature 5 -->
+            <div
+              class="group bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-5"
+              >
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="text-xl font-bold">Mobile-ready interface</h3>
+              <p class="text-gray-500 mt-2">
+                Manage your inventory from anywhere — fully responsive on phone
+                or tablet.
+              </p>
+            </div>
+            <!-- Feature 6 -->
+            <div
+              class="group bg-gray-50/50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-5"
+              >
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="text-xl font-bold">Secure cloud backup</h3>
+              <p class="text-gray-500 mt-2">
+                All records encrypted and automatically backed up. Your data is
+                safe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== PRICING SECTION with Monthly/Yearly Toggle (JS) =========================== -->
+      <section id="pricing" class="py-20 bg-linear-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-5 md:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-indigo-600 font-semibold text-sm uppercase"
+              >Simple pricing</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">
+              Choose the plan that fits your business
+            </h2>
+            <div
+              class="inline-flex items-center gap-4 mt-6 bg-gray-100 p-1 rounded-full"
+            >
+              <button
+                id="monthlyBtn"
+                class="px-6 py-2 text-sm font-medium rounded-full bg-indigo-600 text-white shadow-sm transition"
+              >
+                Monthly
+              </button>
+              <button
+                id="yearlyBtn"
+                class="px-6 py-2 text-sm font-medium rounded-full text-gray-600 hover:text-gray-900 transition"
+              >
+                Yearly
+                <span class="text-indigo-500 text-xs ml-1">Save 20%</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Starter Plan -->
+            <div
+              class="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition"
+            >
+              <div class="mb-4">
+                <i class="fas fa-seedling text-3xl text-indigo-500"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Starter</h3>
+              <p class="text-gray-500 mt-1">
+                Perfect for small shops & solopreneurs
+              </p>
+              <div class="mt-5 flex items-baseline">
+                <span class="text-4xl font-extrabold" id="starterPrice"
+                  >$19</span
+                >
+                <span class="text-gray-500 ml-2" id="starterPeriod"
+                  >/month</span
+                >
+              </div>
+              <ul class="mt-6 space-y-3 text-sm">
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500 mt-0.5"></i> Up to 500
+                  inventory items
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500 mt-0.5"></i> Basic
+                  analytics & reports
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500 mt-0.5"></i> Email
+                  support
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-times text-gray-400 mt-0.5"></i> Advanced
+                  integrations
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="mt-8 block text-center py-2.5 rounded-xl font-medium border border-indigo-300 text-indigo-700 hover:bg-indigo-50 transition"
+                >Start trial</a
+              >
+            </div>
+            <!-- Pro Plan (Most popular) -->
+            <div
+              class="bg-white rounded-2xl shadow-xl border-2 border-indigo-300 relative p-6 transform scale-105 md:scale-100 hover:shadow-2xl transition"
+            >
+              <div
+                class="absolute top-0 right-6 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-b-lg"
+              >
+                MOST POPULAR
+              </div>
+              <div class="mb-4">
+                <i class="fas fa-rocket text-3xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Pro</h3>
+              <p class="text-gray-500 mt-1">For scaling businesses & teams</p>
+              <div class="mt-5 flex items-baseline">
+                <span class="text-4xl font-extrabold" id="proPrice">$49</span>
+                <span class="text-gray-500 ml-2" id="proPeriod">/month</span>
+              </div>
+              <ul class="mt-6 space-y-3 text-sm">
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Unlimited
+                  inventory items
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Advanced
+                  analytics + forecasting
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Priority support
+                  & live chat
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Integrations
+                  (POS, e‑commerce)
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="mt-8 block text-center py-2.5 rounded-xl font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md"
+                >Start 14-day trial</a
+              >
+            </div>
+            <!-- Enterprise Plan -->
+            <div
+              class="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition"
+            >
+              <div class="mb-4">
+                <i class="fas fa-building text-3xl text-indigo-500"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Enterprise</h3>
+              <p class="text-gray-500 mt-1">
+                Custom solutions & dedicated support
+              </p>
+              <div class="mt-5 flex items-baseline">
+                <span class="text-4xl font-extrabold">Custom</span>
+              </div>
+              <ul class="mt-6 space-y-3 text-sm">
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Tailored
+                  onboarding & training
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Unlimited
+                  everything
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> SLA & account
+                  manager
+                </li>
+                <li class="flex gap-2">
+                  <i class="fas fa-check text-indigo-500"></i> Advanced security
+                  & SSO
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="mt-8 block text-center py-2.5 rounded-xl font-medium border border-gray-300 text-gray-700 hover:bg-gray-50 transition"
+                >Contact sales</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== TESTIMONIALS =========================== -->
+      <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-5 md:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-14">
+            <span
+              class="block text-indigo-600 font-semibold tracking-wide uppercase text-sm"
+              >Testimonials</span
+            >
+            <i class="fas fa-quote-left text-indigo-200 text-4xl"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">
+              Loved by business owners worldwide
+            </h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 rounded-2xl p-6 shadow-sm">
+              <div class="flex text-yellow-400 text-sm mb-3">★★★★★</div>
+              <p class="text-gray-700">
+                “Stockify saved us hours every week. The real-time inventory
+                dashboard is a game-changer for our retail shop.”
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div
+                  class="w-10 h-10 rounded-full bg-indigo-200 flex items-center justify-center font-bold"
+                >
+                  JD
+                </div>
+                <div>
+                  <h4 class="font-semibold">Jessica D.</h4>
+                  <p class="text-xs text-gray-400">Boutique owner</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 shadow-sm">
+              <div class="flex text-yellow-400 text-sm mb-3">★★★★★</div>
+              <p class="text-gray-700">
+                “Simple, clean and actually powerful. The low-stock alerts alone
+                have reduced our lost sales by 30%.”
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div
+                  class="w-10 h-10 rounded-full bg-purple-200 flex items-center justify-center font-bold"
+                >
+                  MC
+                </div>
+                <div>
+                  <h4 class="font-semibold">Miguel C.</h4>
+                  <p class="text-xs text-gray-400">Electronics retailer</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 shadow-sm">
+              <div class="flex text-yellow-400 text-sm mb-3">★★★★★</div>
+              <p class="text-gray-700">
+                “Incredible value. As a small business owner, tracking inventory
+                was a headache. Stockify made it effortless.”
+              </p>
+              <div class="flex items-center gap-3 mt-5">
+                <div
+                  class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center font-bold"
+                >
+                  LR
+                </div>
+                <div>
+                  <h4 class="font-semibold">Linda R.</h4>
+                  <p class="text-xs text-gray-400">Craft supply store</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== FINAL CTA SECTION =========================== -->
+      <section class="py-20 bg-indigo-900 text-white">
+        <div class="container mx-auto px-5 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Ready to take control of your inventory?
+          </h2>
+          <p class="text-indigo-200 text-lg max-w-xl mx-auto mt-4">
+            Join thousands of small businesses using Stockify to streamline
+            record-keeping and grow smarter.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4 justify-center">
+            <a
+              href="#pricing"
+              class="px-8 py-3.5 bg-white text-indigo-800 font-bold rounded-xl shadow-lg hover:bg-gray-100 transition transform hover:scale-105 inline-flex items-center gap-2"
+              >Start free trial <i class="fas fa-arrow-right"></i
+            ></a>
+            <a
+              href="#"
+              class="px-8 py-3.5 border border-indigo-400 rounded-xl font-semibold hover:bg-indigo-800 transition"
+              >Contact sales</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================== FOOTER =========================== -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 pt-16 pb-8">
+      <div
+        class="container mx-auto px-5 md:px-8 grid grid-cols-1 md:grid-cols-5 gap-8 border-b border-gray-800 pb-10"
+      >
+        <div class="col-span-2">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-8 h-8 bg-indigo-500 rounded-xl flex items-center justify-center"
+            >
+              <i class="fas fa-boxes text-white text-sm"></i>
+            </div>
+            <span class="font-bold text-xl text-white">Stockify</span>
+          </div>
+          <p class="mt-4 text-sm text-gray-400">
+            Modern inventory & record-keeping for small businesses. <br />
+            Built to simplify operations.
+          </p>
+          <div class="flex space-x-4 mt-5">
+            <i class="fab fa-twitter hover:text-indigo-400 cursor-pointer"></i
+            ><i class="fab fa-linkedin hover:text-indigo-400 cursor-pointer"></i
+            ><i
+              class="fab fa-facebook hover:text-indigo-400 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">Product</h4>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li>
+              <a href="#features" class="hover:text-indigo-300">Features</a>
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-indigo-300">Pricing</a>
+            </li>
+            <li><a href="#" class="hover:text-indigo-300">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">Company</h4>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-indigo-300">About</a></li>
+            <li><a href="#" class="hover:text-indigo-300">Blog</a></li>
+            <li><a href="#" class="hover:text-indigo-300">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">Legal</h4>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-indigo-300">Privacy</a></li>
+            <li><a href="#" class="hover:text-indigo-300">Terms</a></li>
+            <li><a href="#" class="hover:text-indigo-300">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="container mx-auto px-5 text-center text-sm text-gray-500 pt-8"
+      >
+        &copy; 2026 Stockify — Simplify your inventory. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- =========================== JAVASCRIPT (mobile menu + pricing toggle + analytics placeholder events) =========================== -->
+    <script src="script.js"></script>
+  </body>
+</html>

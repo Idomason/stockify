@@ -1,0 +1,19 @@
+{
+  "name": "stockify",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build": "postcss src/input.css -o dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A landing page for Stockify, a stock market analysis tool. This project uses Tailwind CSS for styling and PostCSS for processing CSS. The build script watches for changes in the input CSS file and outputs the processed CSS to the dist directory.",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.13",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.2.4"
+  }
+}
